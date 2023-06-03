@@ -39,6 +39,7 @@ while True:
     else:
         query = "<Past Message>\n" + last_message + "\n<Query>\n" + input_audio
     error = True
+    last_message = input_audio
     messages = [
         {"role": "system", "content": "You are very kind assitant. Please answer to the <Query> with Korean refer <Past Message>"},
         {"role": "user", "content": query}
